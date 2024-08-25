@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact">
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circle"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="-50dp"
+        ></RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/textcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=" Email us "
+            android:textColor="#000000"
+            android:textSize="30dp"
+            />
+        <ImageView
+            android:id="@+id/backcontact"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon100"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon103"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/emailcontact"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/contact"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/borderlogin">
+
+        <TextView
+            android:id="@+id/contactcall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:text="Call us"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/borderlogin"
+            android:backgroundTint="#3D6DFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Email us"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:background="@drawable/circle"
+        android:layout_below="@id/emailcontact"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentBottom="true"
+        >
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/contactsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailcontact"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/borderlogin">
+        <TextView
+            android:id="@+id/submit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Submit your form"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/submit1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/borderlogin"
+            android:hint="   Enter recipent mail"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/email"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/borderlogin"
+            android:hint="   Subject"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/message1"
+            android:layout_width="330dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/subject"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/borderlogin"
+            android:hint="   Write your message"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/send"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/contactsubmit"
+        android:text="Send"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>

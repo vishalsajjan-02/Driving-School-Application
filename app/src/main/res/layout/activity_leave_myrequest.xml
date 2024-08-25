@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaveMyrequest">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circle"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="-50dp"
+        >
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/leaverequest"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/textleaverequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=" Leave "
+            android:textColor="#000000"
+            android:textSize="30dp"
+            />
+        <ImageView
+            android:id="@+id/backleaverequest"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon100"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon103"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/emailleaverequest"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/leaverequest"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/borderlogin">
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#3D6DFF"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/borderlogin"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="My request"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/myrequestLeaving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Leaving"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circle"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="-50dp">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/paymentall"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Payment "
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/backPayment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon100"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon103"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/paymentsystem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="select payment system"
+        android:layout_below="@id/paymentall"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/color4"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/circle"
+        android:layout_below="@id/paymentsystem"
+        android:layout_marginLeft="-300dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="140dp"
+        >
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/payment01"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/paymentsystem">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/icon134"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/payment02"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/paymentsystem">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/icon133"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Next"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/borderbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        />
+
+</RelativeLayout>

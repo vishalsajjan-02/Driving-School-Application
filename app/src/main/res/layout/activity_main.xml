@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+<RelativeLayout
+    android:id="@+id/login1"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="20dp"
+    >
+
+    <TextView
+        android:id="@+id/textlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text=" Login "
+        android:textColor="#000000"
+        android:textSize="30dp"
+        />
+    <ImageView
+        android:id="@+id/backlogin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon100"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       android:src="@drawable/icon103"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        app:lottie_rawRes="@raw/animation"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/animation_view"
+        android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--<ImageView
+        android:id="@+id/imagelogin"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/icon105"
+        android:layout_marginTop="30dp"
+
+        />-->
+<RelativeLayout
+    android:id="@+id/emailpasswordlogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp"
+
+    >
+    <EditText
+        android:id="@+id/editemaillogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/borderlogin"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:hint="Enter your email" />
+
+
+    <EditText
+        android:id="@+id/enterpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="50dp"
+        android:layout_below="@id/editemaillogin"
+        android:hint="Enter password"
+        android:background="@drawable/borderlogin"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Log in"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/emailpasswordlogin"
+        android:background="@drawable/borderbutton"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/loginbtn"
+        >
+        <TextView
+            android:id="@+id/textlinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Don`t have any account? "
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textlinear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register now "
+            android:textColor="#673AB7"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

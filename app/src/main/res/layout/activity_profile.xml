@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/background_profile"
+        >
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/iconimage"
+        android:layout_marginTop="80dp"
+        />
+    <ImageView
+        android:id="@+id/editprofile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="140dp"
+        android:onClick="editimage"
+        android:src="@drawable/iconedit" />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/userdata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="user information : "
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="editInfo"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/downloada" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/usernameall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:layout_marginHorizontal="20dp"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/emailall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:layout_marginHorizontal="20dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/addressall"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=""
+                android:layout_marginHorizontal="20dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/ageall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=""
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/phoneall"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:layout_marginHorizontal="20dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

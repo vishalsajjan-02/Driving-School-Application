@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "848842903587",
+    "firebase_url": "https://drivingapp-46a0d-default-rtdb.firebaseio.com",
+    "project_id": "drivingapp-46a0d",
+    "storage_bucket": "drivingapp-46a0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848842903587:android:3e6b6600cb0219c4f22196",
+        "android_client_info": {
+          "package_name": "com.example.myapplication2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-27GOUql9ouK4gC3ijjfnKo_molbOA3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quizzz.quizz">
+
+    <RelativeLayout
+        android:id="@+id/im1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/im5"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/im1"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/easyButton"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#675A5A"
+            android:layout_height="60dp">
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Easy Level"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mediumButton"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#675A5A"
+            android:layout_below="@id/easyButton"
+            android:layout_height="60dp">
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Medium Level"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hardButton"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#675A5A"
+            android:layout_below="@id/mediumButton"
+            android:layout_height="60dp">
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hard Level"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

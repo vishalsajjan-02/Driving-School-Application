@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Logindashboard"
+    >
+    <RelativeLayout
+        android:id="@+id/aa1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/welcomeback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back,"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/Domen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_below="@id/welcomeback"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15.01.2024"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_below="@id/Domen"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/courses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our all course :"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_below="@id/date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view all"
+        android:textColor="#1D3EF3"
+        android:textSize="30dp"
+        android:layout_below="@id/date"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        />
+<RelativeLayout
+    android:id="@+id/relativeall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/view"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+    <RelativeLayout
+        android:id="@+id/relative01"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/editimagelogin"
+
+        >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        >
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="01"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/uniform1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/one"
+            android:layout_marginLeft="20dp"
+            android:text="Uniform driving"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/hours1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uniform1"
+            android:layout_marginLeft="20dp"
+            android:text="hours (colved)"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hours1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="100.00$"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/editimagelogin1"
+        android:layout_alignParentRight="true"
+        >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        >
+    <TextView
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="02"
+        android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:id="@+id/uniform2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/two"
+            android:layout_marginLeft="20dp"
+            android:text="Uniform driving"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/hours2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uniform2"
+            android:layout_marginLeft="20dp"
+            android:text="hours (colved)"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hours2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="200.00$"
+            android:textSize="20dp"
+            />
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/relativeall"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+
+            android:src="@drawable/icon112" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Categories :"
+        android:layout_below="@id/icon"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service">
+        <RelativeLayout
+            android:id="@+id/profile"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="10dp"
+                >
+                <ImageView
+
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon113"
+                    android:layout_margin="5dp"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Profile"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/course1.1"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/course1.2"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="10dp"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon114"
+                    android:layout_margin="5dp"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/course1.2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Course"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/payment"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/payment1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="10dp"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon115"
+                    android:layout_margin="5dp"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/payment1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Payment"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/invoice"
+            android:layout_width="74dp"
+            android:layout_height="94dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/invoice1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/icon116" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/invoice1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Invoice"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/teacher"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/profile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/teacher1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="10dp"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon117"
+                    android:layout_margin="5dp"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teacher1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Teacher"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rechrage"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/profile"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rechrage1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="10dp"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon118"
+                    android:layout_margin="5dp"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rechrage1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Rechrage"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/leave"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/profile"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/leave1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="10dp"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon119"
+                    android:layout_margin="5dp"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leave1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Leave"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/profile"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/contact1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="10dp"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon120"
+                    android:layout_margin="5dp"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Contact"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+           </RelativeLayout>
+
+</ScrollView>

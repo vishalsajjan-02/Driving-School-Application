@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".imagesend">
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Information"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/info"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+
+        android:inputType="text"
+        android:hint="User Name"
+        android:textColorHint="#000000"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/useremail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/user"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+
+        android:inputType="textEmailAddress"
+        android:hint="Email ID"
+        android:textColorHint="#000000"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/useremail"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:hint="Permanent Address"
+        android:textColorHint="#000000"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/address"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:hint="Age"
+        android:textColorHint="#000000"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/age"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:textColorHint="#000000"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4668EB"
+        app:cardCornerRadius="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="35dp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
